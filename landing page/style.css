@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet');
+
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: "Lilita One", sans-serif;
+}
+
+section{
+	min-height: 100vh;
+	background-image:linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0)), url("https://thumb.ac-illust.com/41/4177ba6245d84c45948260e4ac22103a_t.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color:darkslategrey;
+    color: white;
+}
+
+.contact-info {
+    flex: 1;                       
+}
+.contact-info p {
+    margin: 0;                    
+    font-size: 14px;         
+}
+
+.logo-container {
+    display: flex;
+    align-items: left;
+}
+.logo {
+    width: 100px;
+    margin-right: 20px;
+}
+
+nav{
+	height: 80px;
+}
+nav h1{
+	float: left;
+	line-height: 100px;
+	font-size: 40px;
+	color: #002244;
+	margin-left: 20px;
+}
+nav ul{
+	float:right;
+	line-height: 100px;
+}
+nav ul li{
+	display: inline-block;
+	list-style: none;
+	padding: 0px 9px;
+}
+nav ul li a{
+	color: #0C2340;
+	text-decoration: underline;
+	text-transform: uppercase;
+	border-radius: 5px;
+	padding: 7px 8px;
+}
+nav ul li a:hover{
+	background-color: #1da1f2;
+	transition: 0.5s ease;
+}
+nav ul li .active{
+	background-color: #1da1f2;
+}
+
+.article{
+	width: 50%;
+	margin: auto;
+	transform: translateY(25vh);
+	border: 1px solid darkgrey;       
+    padding: 30px;                
+    background-color: #E1EBEE;    
+    border-radius: 3px;          
+    max-width: 1000px;                        
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+    text-align: center; 
+
+}
+.article h1{
+	font-size: 50px;
+	color: #002147;
+	margin-left: 10px;
+	letter-spacing: 1.5px;
+	font-weight: 900;
+	margin-bottom: 25px;
+}
+.article p{
+	font-size: 18 px;
+	color: #0E3386;
+	line-height: 1.5;
+	margin-bottom: 50px;
+}
+.article .btn{
+	color: #120A8F;
+	padding: 12px 25px;
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+	text-decoration: none;
+	background-color: #A4DDED;
+}
+.article .btn:hover{
+	background-color: #1da1f2;
+	transition: 0.5s ease;
+}
+
+.image-gallery {
+    text-align: center;
+    padding: 50px 0;
+    opacity: 0;
+    transform: translateY(30px); 
+    animation: fadeInUp 1.5s ease forwards; 
+}
+.image-gallery h2 {
+    font-size: 50px;
+    margin-bottom: 40px;
+    color: black;
+}
+.image-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.gallery-img {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+.gallery-img:hover {
+    transform: scale(1.05);
+}
+
+.about {
+    padding: 60px 50px;
+    background-color: #ffffff; 
+    text-align: center;
+    opacity: 0;               
+    transform: translateY(30px); 
+    animation: fadeInUp 1.5s ease forwards;        
+}
+.about h2 {
+    font-size: 30px;           
+    margin-bottom: 20px;     
+}
+.about p{
+    font-size: 16px;           
+    margin-bottom: 30px;       
+    line-height: 1.6;          
+    color: darkslategrey;               
+
+}
+.about .btn {
+    text-decoration: none;
+    background-color: #0096c7;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-size: 25px;
+    transition: background-color 0.3s ease;
+}
+.about .btn:hover {
+    background-color: #0077b6; 
+}
+
+.gallery {
+    padding: 80px 50px;
+    background-color: #0C2340;
+    text-align: center;
+}
+.gallery h2 {
+    font-size: 50px;
+    margin-bottom: 40px;
+    color: #0C2340;
+    text-align: left;
+}
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.image-gallery img {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.image-gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.hero {
+    height: 100vh;
+    background: url('https://s.tmimgcdn.com/scr/1200x627/443400/blur-office-meeting-blurred-background-with-business-people-working-group-in-boardroom-discussion_443453-original.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.hero-text {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 30px 50px;
+    border-radius: 10px;
+    color: white;
+}
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.btn {
+    text-decoration: none;
+    background-color: #0096c7;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+.btn:hover {
+    background-color: #0077b6; 
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: darkslategrey;
+    color: white;
+    font-size: 14px;
+}
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px); /* Start from below */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* End at normal position */
+    }
+}
