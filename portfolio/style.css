@@ -1,0 +1,161 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 2em;
+    background: #f5f5f5;
+}
+
+nav .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+nav .logo-pic{
+    width: 100px;
+    margin-right: 10px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    margin-right: 20px;
+    gap: 1.5em;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.hero {
+    text-align: center;
+    padding: 2em;
+    background-color: #f9f9f9;
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+}
+
+.hero h1 span {
+    color: #003E7F;
+}
+
+.hero .wave {
+    animation: wave 1s infinite;
+}
+
+@keyframes wave {
+    0%, 100% { transform: rotate(0deg); }
+    50% { transform: rotate(20deg); }
+}
+
+.hero p {
+    margin-top: 0.5em;
+    font-size: 1.2em;
+    color: #555;
+}
+
+.hero .social-links {
+    margin-top: 1em;
+}
+
+.hero .social-links .pic {
+    width: auto; 
+    height: 40px;
+    margin-left: 2px; 
+}
+
+.hero .buttons {
+    margin-top: 1.5em;
+}
+
+.hero .btn {
+    text-decoration: none;
+    color: white;
+    background-color: #003E7F;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    margin: 0 0.5em;
+}
+
+.hero-img {
+    max-width: 300px;
+    margin-top: 2em;
+    animation: float 3s ease-in-out infinite;
+}
+/* Projects Section */
+#projects, #blogs {
+    padding: 2rem;
+    background-color: #f4f4f9;
+}
+
+.project-list, .blog-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.project, .blog {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 1.5rem;
+    border-radius: 10px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.project h3, .blog h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.project p, .blog p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.project .btn, .blog .btn {
+    text-decoration: none;
+    background-color: #0073e6;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.project .btn:hover, .blog .btn:hover {
+    background-color: #005bb5;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+#skills, #projects, #blogs, #contact {
+    padding: 2em;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+footer {
+    background-color: #83B7B7;
+    color: #101010;
+    text-align: center;
+    padding: 1em;
+}
